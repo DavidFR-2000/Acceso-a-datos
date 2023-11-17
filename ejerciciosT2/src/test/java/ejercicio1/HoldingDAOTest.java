@@ -35,10 +35,6 @@ class HoldingDAOTest {
         // Llama al método agregarEmpleado para agregar un empleado
         dao.agregarEmpleado(nombre, apellidos, fecha_nacimiento, categoria, email, contratacion, salario, empresa);
 
-        // Realiza una prueba para verificar si el empleado ha sido agregado correctamente en la base de datos
-        // Puedes usar consultas SQL para verificar si los datos se han insertado correctamente
-        // y si existe un empleado con los datos proporcionados en la base de datos
-        // A continuación, un ejemplo de cómo podrías verificar esto:
         boolean empleadoAgregado = verificarEmpleadoAgregado(nombre, apellidos, empresa);
 
         assertTrue(empleadoAgregado, "El empleado se agregó correctamente en la base de datos.");

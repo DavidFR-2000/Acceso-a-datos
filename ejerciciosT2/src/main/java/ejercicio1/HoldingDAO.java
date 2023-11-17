@@ -151,6 +151,8 @@ public class HoldingDAO {
 
         public void crearCoche(String modelo,String fabricante,Double cc,String lanzamiento,Integer año,String empleado){
 
+            Connection connection = establecerConexion();
+
         }
 
         public Double costeProyecto(String proyecto){
